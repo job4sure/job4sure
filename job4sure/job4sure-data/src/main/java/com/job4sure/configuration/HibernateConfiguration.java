@@ -19,9 +19,9 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 
 @Configuration
 @EnableTransactionManagement
-@ComponentScan({ "com.ijp.configuration" })
+@ComponentScan({ "com.job4sure.configuration" })
 @PropertySource({ "classpath:hibernate.properties" })
-@EnableJpaRepositories("com.ijp.repository")
+@EnableJpaRepositories("com.job4sure.repository")
 public class HibernateConfiguration {
 	
 	
@@ -70,5 +70,7 @@ public class HibernateConfiguration {
 		JpaTransactionManager transactionManager = new JpaTransactionManager();
 		transactionManager.setEntityManagerFactory(entityManagerFactory().getObject());
 		return transactionManager;
+
 	}
+	
 }
