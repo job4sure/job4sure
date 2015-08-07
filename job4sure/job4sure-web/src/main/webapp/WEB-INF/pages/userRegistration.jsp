@@ -14,7 +14,7 @@
 		<table border="1" width="30%" cellpadding="5">
 			<thead>
 				<tr>
-					<th colspan="2">Enter Information Here</th>
+					<th colspan="2">User Registration Here</th>
 				</tr>
 			</thead>
 			<tbody>

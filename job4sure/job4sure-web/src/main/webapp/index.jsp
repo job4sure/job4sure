@@ -1,5 +1,5 @@
-<html>
-<body>
-<h2>Hello World!</h2>
-</body>
-</html>
+
+<%
+	System.out.println("index page");
+	 response.sendRedirect("userRegistrationPage");
+%>
