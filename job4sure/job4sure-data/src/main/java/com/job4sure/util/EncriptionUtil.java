@@ -2,8 +2,15 @@ package com.job4sure.util;
 
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
-
+ 
 public class EncriptionUtil {
+	
+	/**
+	 * 
+	 * 
+	 * @param input
+	 * @return string
+	 */
 	 public static String encrypted(String input) {
 	  StringBuffer sb = new StringBuffer();
 	  try {
