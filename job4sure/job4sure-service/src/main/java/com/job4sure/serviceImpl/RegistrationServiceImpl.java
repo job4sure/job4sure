@@ -9,6 +9,7 @@ import org.springframework.transaction.annotation.Transactional;
 import com.job4sure.model.UserRegistration;
 import com.job4sure.repository.RegistrationRepository;
 import com.job4sure.service.RegistrationService;
+import com.job4sure.util.EncriptionUtil;
 
 
 
@@ -22,6 +23,10 @@ public class RegistrationServiceImpl implements RegistrationService  {
 	
 	@Transactional
     public Integer userRegistration(UserRegistration userRegistration) {
+		
+		 String password = EncriptionUtil.encrypted(userRegistration.getPassword());
+				  System.out.println(password);
+				  userRegistration.setPassword(password);
 		registrationRepository.save(userRegistration) ;
 		return 1;
     }

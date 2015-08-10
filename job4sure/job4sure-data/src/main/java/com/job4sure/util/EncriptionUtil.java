@@ -5,12 +5,7 @@ import java.security.NoSuchAlgorithmException;
  
 public class EncriptionUtil {
 	
-	/**
-	 * 
-	 * 
-	 * @param input
-	 * @return string
-	 */
+	
 	 public static String encrypted(String input) {
 	  StringBuffer sb = new StringBuffer();
 	  try {
